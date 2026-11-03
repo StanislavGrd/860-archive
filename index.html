@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>860 Archive | Streetwear</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="860 Archive Logo">
+            </div>
+            
+            <div id="ticker" class="shipping-info fade-in">
+                Fast EU Shipping (2–5 Days)
+            </div>
+
+            <div class="header-right">
+                <span id="shop-uhr" class="uhr-anzeige">00:00:00 CET</span>
+                <span class="cart">Cart (0)</span>
+                
+                <button id="burger-menu-btn" class="burger-btn" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="side-nav" class="side-navigation">
+        <button id="close-nav-btn" class="close-btn">&times;</button>
+        <nav class="side-nav-links">
+            <a href="#" class="tab-link active" data-tab="shop-page">Shop</a>
+            <a href="#" class="tab-link" data-tab="community-page">Community</a>
+            <a href="#" class="tab-link" data-tab="support-page">Support</a>
+            <a href="#" class="tab-link" data-tab="impressum-page">Impressum</a>
+        </nav>
+    </div>
+
+    <div id="shop-page" class="page-content active-page">
+        <section class="hero">
+            <div class="hero-overlay">
+                <h2 class="hero-logo">860 ARCHIVE</h2>
+                <p class="hero-subtitle">Premium Shirts</p>
+            </div>
+        </section>
+
+        <main>
+            <section id="kollektion" class="kollektion-section">
+                <div class="filter-leiste">
+                    <button class="filter-btn active">All Items</button>
+                </div>
+
+                <div class="produkt-galerie">
+                    <div class="produkt-karte">
+                        <img src="img/Balotelli1.png" alt="Balotelli WHY ALWAYS ME Shirt" class="produkt-bild">
+                        <div class="produkt-info">
+                            <h4>Balotelli WHY ALWAYS ME Shirt</h4>
+                            <p class="preis">39,99 €</p>
+                        </div>
+                        <select class="groessen-auswahl">
+                            <option value="">Select Size...</option>
+                            <option value="S">Size S</option>
+                            <option value="M">Size M</option>
+                            <option value="L">Size L</option>
+                            <option value="XL">Size XL</option>
+                        </select>
+                        <div class="auswahl-status"></div>
+                        <button class="kauf-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="produkt-karte">
+                        <img src="img/Neymar1.png" alt="Neymar 100% JESUS Shirt" class="produkt-bild">
+                        <div class="produkt-info">
+                            <h4>Neymar 100% JESUS Shirt</h4>
+                            <p class="preis">39,99 €</p>
+                        </div>
+                        <select class="groessen-auswahl">
+                            <option value="">Select Size...</option>
+                            <option value="S">Size S</option>
+                            <option value="M">Size M</option>
+                            <option value="L">Size L</option>
+                        </select>
+                        <div class="auswahl-status"></div>
+                        <button class="kauf-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="produkt-karte">
+                        <img src="img/Yamal1.png" alt="Yamal PALESTINE Shirt" class="produkt-bild">
+                        <div class="produkt-info">
+                            <h4>Yamal PALESTINE Shirt</h4>
+                            <p class="preis">39,99 €</p>
+                        </div>
+                        <select class="groessen-auswahl">
+                            <option value="">Select Size...</option>
+                            <option value="S">Size S</option>
+                            <option value="M">Size M</option>
+                            <option value="L">Size L</option>
+                        </select>
+                        <div class="auswahl-status"></div>
+                        <button class="kauf-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="size-guide" class="size-guide-section">
+                <button id="toggle-table-btn" class="kauf-btn">Open Size Chart</button>
+                <div id="table-container" class="hidden-element">
+                    <table class="size-table">
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Chest (cm)</th>
+                                <th>Length (cm)</th>
+                                <th>Sleeve (cm)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>S</td><td>112</td><td>72</td><td>22</td></tr>
+                            <tr><td>M</td><td>118</td><td>74</td><td>23</td></tr>
+                            <tr><td>L</td><td>124</td><td>76</td><td>24</td></tr>
+                            <tr><td>XL</td><td>130</td><td>78</td><td>25</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="community-page" class="page-content">
+        <section class="hero">
+            <div class="hero-overlay">
+                <h2 class="hero-logo">860 COMMUNITY</h2>
+                <p class="hero-subtitle">Outfit Check & Crew Chat</p>
+            </div>
+        </section>
+
+        <main>
+            <section id="live-feed" class="live-feed-section">
+                <div id="live-comments-container"></div>
+                
+                <div id="static-comments-fallback">
+                    <div class="comment">
+                        <span class="nickname">@StreetwearBro</span> wrote on <span class="date">2026-06-22</span>:
+                        <div class="commenttext">Stabiler Drop, das rote Design kommt wild!</div>
+                    </div>
+                </div>
+
+                <div class="ajax-form-container">
+                    <h4 class="form-section-title">Drop your Message</h4>
+                    <form id="ajax-comment-form">
+                        <div class="form-group">
+                            <label for="ajax-username">Nickname</label>
+                            <input type="text" id="ajax-username" required placeholder="z.B. ArchiveFan">
+                        </div>
+                        <div class="form-group">
+                            <label for="ajax-text">Message / Outfit URL</label>
+                            <textarea id="ajax-text" rows="2" required placeholder="Write something about your fit..."></textarea>
+                        </div>
+                        <button type="submit" class="kauf-btn">Post to Crew Feed</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="support-page" class="page-content">
+        <section class="hero">
+            <div class="hero-overlay">
+                <h2 class="hero-logo">860 SUPPORT</h2>
+                <p class="hero-subtitle">24/7 Archive Helpdesk</p>
+            </div>
+        </section>
+
+        <main>
+            <section id="kontakt" class="kontakt-bereich">
+                <div class="kontakt-text">
+                    <h3>Direct Ticket System</h3>
+                    <p>Klassischer Formular-Versand direkt an das Server-Prüfskript der Hochschule.</p>
+                </div>
+                <div class="kontakt-formular">
+                    <form action="https://zuse1.efi.ohmportal.de:8443/json" method="POST">
+                        <div class="form-group">
+                            <label>E-Mail-Adresse</label>
+                            <input type="email" name="email" required placeholder="deine@mail.de">
+                        </div>
+                        <div class="form-group">
+                            <label>Dringlichkeit</label>
+                            <select name="wichtigkeit" class="form-select">
+                                <option value="Megawichtig">Megawichtig</option>
+                                <option value="Wichtig">Wichtig</option>
+                                <option value="Normal" selected>Normal</option>
+                                <option value="Irrelevant">Irrelevant</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Deine Nachricht</label>
+                            <textarea name="nachricht" rows="3" required placeholder="Wie können wir helfen?"></textarea>
+                        </div>
+                        <button type="submit" class="senden-btn">Formular absenden</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="impressum-page" class="page-content">
+        <section class="hero">
+            <div class="hero-overlay">
+                <h2 class="hero-logo">860 LEGAL</h2>
+                <p class="hero-subtitle">Impressum & Angaben</p>
+            </div>
+        </section>
+
+        <main>
+            <section class="impressum-section">
+                <div class="impressum-block">
+                    <h3>Angaben gemäß § 5 TMG</h3>
+                    <p>860 Archive GmbH</p>
+                    <p>Musterstraße 86</p>
+                    <p>12345 Musterstadt</p>
+                </div>
+
+                <div class="impressum-block">
+                    <h3>Vertreten durch</h3>
+                    <p>Max Mustermann (Geschäftsführung)</p>
+                </div>
+
+                <div class="impressum-block">
+                    <h3>Kontakt</h3>
+                    <p>Telefon: +49 (0) 123 456789</p>
+                    <p>E-Mail: support@860archive.de</p>
+                </div>
+
+                <div class="impressum-block">
+                    <h3>Registereintrag</h3>
+                    <p>Eintragung im Registergericht: Musterstadt</p>
+                    <p>Registernummer: HRB 860860</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 860 ARCHIVE. All rights reserved. Praktikum Web-Grundlagen.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
